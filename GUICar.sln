@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUICar", "GUICar\GUICar.csproj", "{1EEE296E-49BB-407C-B48A-670F2D3F4CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarRental", "CarRental\CarRental.csproj", "{68B8FE2C-4BCD-45BD-9126-EB5BA5FA1169}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car.Tests", "Car.Tests\Car.Tests.csproj", "{DFBC66FD-DE0E-4D63-838B-5F1E9C54F765}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EEE296E-49BB-407C-B48A-670F2D3F4CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EEE296E-49BB-407C-B48A-670F2D3F4CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EEE296E-49BB-407C-B48A-670F2D3F4CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EEE296E-49BB-407C-B48A-670F2D3F4CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68B8FE2C-4BCD-45BD-9126-EB5BA5FA1169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68B8FE2C-4BCD-45BD-9126-EB5BA5FA1169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68B8FE2C-4BCD-45BD-9126-EB5BA5FA1169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68B8FE2C-4BCD-45BD-9126-EB5BA5FA1169}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBC66FD-DE0E-4D63-838B-5F1E9C54F765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBC66FD-DE0E-4D63-838B-5F1E9C54F765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBC66FD-DE0E-4D63-838B-5F1E9C54F765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBC66FD-DE0E-4D63-838B-5F1E9C54F765}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24B509F3-DB37-4656-AE67-1AE4C6AA2B67}
+	EndGlobalSection
+EndGlobal
