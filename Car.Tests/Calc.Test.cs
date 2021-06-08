@@ -16,19 +16,29 @@ namespace Car.Tests
         {
             c = null;
         }
-        [TestCase()]
-        public void calcCarValueShouldSuccess(double value, int years, int volume, int hp)
+        [TestCase(50000.00, 3, 1500, 150, 1368.75)]
+        [TestCase(1, 1, 1, 1, 0.000475)]
+        [TestCase(100000.00, 5, 2300, 230, 3007.25)]
+        public void calcCarValueShouldSuccess(double value, double years, double volume, double hp, double expected)
         {
             double calcValue = c.calcCarValue(value, years, volume, hp);
-            double expected = 1372.5;
-            Assert.AreEqual(value, expected);
+            
+            Assert.That(calcValue, Is.EqualTo(expected));
         }
-        [Test]
-        public void calcDriverModShouldSuccess()
+        [TestCase(30, 12, 0.84)]
+        [TestCase(45, 25, 0.3)]
+        [TestCase(50, 10, 0.7)]
+        public void calcDriverModShouldSuccess(double age, double driverLicence, double expected)
         {
-            double value = c.calcDriverMod(1, 1, 1, 1);
-            double expected = 1372.5;
+            double value = c.calcDriverMod(age, driverLicence);
             Assert.That(value, Is.EqualTo(expected));
+        }
+        [TestCase(50000.00, 3, 1500, 150, 30, 12, 1149.75)]
+        [TestCase(100000.00, 5, 2300, 230, 50, 10, 2105.075)]
+        public void calcResultShouldSuccess(double value, double years, double volume, double hp, double age, double driverLicence, double expected)
+        {
+           double result =  c.calcResult(value, years, volume, hp, age, driverLicence);
+            Assert.That(result, Is.EqualTo(expected));
         }
     }
 }
